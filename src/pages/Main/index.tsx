@@ -1,7 +1,7 @@
 function Main() {
 
   return (
-    <div>
+    <div className="bg-zinc-900 h-screen">
       
     </div>
   )
