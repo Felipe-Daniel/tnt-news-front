@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span, ::placeholder {
+    font-family: 'Patua One', cursive;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}

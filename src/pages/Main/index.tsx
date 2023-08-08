@@ -1,8 +1,10 @@
+import HeaderMain from './components/header'
+
 function Main() {
 
   return (
-    <div>
-      
+    <div className='bg-zinc-900 h-screen'>
+      <HeaderMain />
     </div>
   )
 }
