@@ -19,7 +19,7 @@ export function NewsPreview({ id, url_image, title, category, author, date, colo
 
     return (
         <div
-            className={clsx('cursor-pointer overflow-hidden relative rounded-t-xl group hover:ring-1 hover:rounded-xl hover:ring-primary hover:ring-offset-4 hover:ring-offset-zinc-900', {
+            className={clsx('cursor-pointer overflow-hidden relative rounded-t-md group hover:ring-1 hover:rounded-md hover:ring-primary hover:ring-offset-4 hover:ring-offset-zinc-900', {
                 'w-2/3': type === 'highlighted',
                 'w-full h-full': type === 'aside'
             })}
@@ -38,7 +38,7 @@ export function NewsPreview({ id, url_image, title, category, author, date, colo
                 })}
             >
                 <div>
-                    <div className="px-6 py-1 bg-primary rounded-full inline-block">
+                    <div className="px-6 py-1 bg-primary rounded-md inline-block">
                         <span className={clsx({
                             'text-white text-xl': type === 'highlighted',
                             'text-white text-md': type === 'aside',

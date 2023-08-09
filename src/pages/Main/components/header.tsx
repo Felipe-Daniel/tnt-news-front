@@ -3,7 +3,7 @@ import { MagnifyingGlass, User, SignOut } from '@phosphor-icons/react'
 import { useNavigate } from 'react-router';
 import { Button } from '../../../components/Button';
 
-interface HeaderMainProps {
+interface HeaderProps {
     user?: {
         email: string;
         nome: string;
@@ -11,7 +11,7 @@ interface HeaderMainProps {
     };
 }
 
-function HeaderMain({ user }: HeaderMainProps) {
+export function Header({ user }: HeaderProps) {
     const navigate = useNavigate()
 
     return (
@@ -46,5 +46,3 @@ function HeaderMain({ user }: HeaderMainProps) {
         </header>
     )
 }
-
-export default HeaderMain

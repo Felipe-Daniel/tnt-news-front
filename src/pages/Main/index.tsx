@@ -1,6 +1,8 @@
-import HeaderMain from './components/header'
-import { RecentNews } from './components/recentNews'
-import { Sidebar } from './components/sidebar'
+import { useState } from 'react';
+import { Header } from './components/Header'
+import { RecentNews } from './components/RecentNews'
+import { Sidebar } from './components/Sidebar'
+import { NewsByCategory } from './components/NewsByCategory';
 
 const fakeAPI = [
   {
@@ -38,13 +40,15 @@ const fakeAPI = [
 ]
 
 function Main() {
+  const [currentSection, setCurrentSection] = useState<string>('Últimas notícias');
 
   return (
     <div className='bg-zinc-900 h-screen flex flex-col'>
-      <HeaderMain />
+      <Header />
       <div className='flex h-full'>
-        <Sidebar />
-        <RecentNews news={fakeAPI} />
+        <Sidebar currentSection={currentSection} setCurrentSection={setCurrentSection} />
+        { currentSection === 'Últimas notícias' && <RecentNews news={fakeAPI} /> }
+        { !currentSection.endsWith('notícias') && <NewsByCategory news={fakeAPI} category={currentSection} /> }
       </div>
     </div>
   )
