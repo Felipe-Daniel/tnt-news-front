@@ -8,9 +8,7 @@ function Main() {
       <HeaderMain />
       <div className='flex h-full'>
         <Sidebar />
-        <section className='w-10/12'>
-          
-        </section>
+        
       </div>
     </div>
   )
