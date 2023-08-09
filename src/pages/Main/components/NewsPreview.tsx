@@ -17,7 +17,7 @@ export function NewsPreview({ url_image, title, category, author, date, color='l
     return (
         <div
             className={clsx('bg-cover bg-center rounded-xl', {
-                'w-[44rem] h-[44rem]': size === 'big',
+                'w-1/2 h-full': size === 'big',
                 'w-[30rem] h-[12rem]': size === 'small'
             })}
             style={{
