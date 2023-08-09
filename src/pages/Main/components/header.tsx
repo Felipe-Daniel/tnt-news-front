@@ -1,7 +1,7 @@
 import logo from '../../../assets/tnt_logo.png';
 import { MagnifyingGlass, User, SignOut } from '@phosphor-icons/react'
 import { useNavigate } from 'react-router';
-import { Button } from '../../../components/button';
+import { Button } from '../../../components/Button';
 
 interface HeaderMainProps {
     user?: {
