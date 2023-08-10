@@ -3,12 +3,17 @@
 @tailwind utilities;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
-span, ::placeholder {
-    font-family: 'Patua One', cursive;
+span,
+::placeholder {
+  font-family: "Patua One", cursive;
+}
+
+:root {
+  --animate-duration: 300ms;
 }
